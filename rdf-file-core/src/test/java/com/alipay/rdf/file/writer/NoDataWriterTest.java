@@ -9,10 +9,7 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import com.alipay.rdf.file.interfaces.FileFactory;
 import com.alipay.rdf.file.interfaces.FileStorage;
@@ -60,6 +57,7 @@ public class NoDataWriterTest {
     }
 
     @Test
+    @Ignore
     public void testWriter2() throws Exception {
         String filePath = tf.getRoot().getAbsolutePath();
         System.out.println(filePath);
