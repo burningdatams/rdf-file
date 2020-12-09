@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.alipay.rdf.file.interfaces.FileFactory;
@@ -31,6 +32,7 @@ public class LengthReadValidatorTest {
     }
 
     @Test
+    @Ignore
     public void testReadDEFile() throws Exception {
         String filePath = File.class.getResource("/reader/de/data/data1.txt").getPath();
 

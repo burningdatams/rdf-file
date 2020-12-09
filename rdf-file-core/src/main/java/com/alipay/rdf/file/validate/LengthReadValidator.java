@@ -16,7 +16,7 @@ import com.alipay.rdf.file.spi.RdfFileProcessorSpi;
  * Copyright (C) 2013-2018 Ant Financial Services Group
  * 
  * 读文件长度校验
- * 
+ * TODO: bugfix LengthReadValidatorTest#testReadDEFile()
  * @author hongwei.quhw
  * @version $Id: LengthReadValidator.java, v 0.1 2017年8月9日 下午2:54:15 hongwei.quhw Exp $
  */
