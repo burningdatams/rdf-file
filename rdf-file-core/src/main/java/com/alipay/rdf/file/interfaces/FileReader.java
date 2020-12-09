@@ -10,7 +10,7 @@ import com.alipay.rdf.file.model.Summary;
  * @author hongwei.quhw
  * @version $Id: FileReader.java, v 0.1 2016-12-20 下午4:46:49 hongwei.quhw Exp $
  */
-public interface FileReader {
+public interface FileReader extends AutoCloseable {
     /**
      * 读取头信息， 返回指定对象
      */
@@ -39,5 +39,6 @@ public interface FileReader {
     /**
      * 关闭流
      */
+    @Override
     void close();
 }

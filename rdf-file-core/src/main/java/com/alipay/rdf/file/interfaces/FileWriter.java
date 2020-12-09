@@ -10,7 +10,7 @@ import com.alipay.rdf.file.model.Summary;
  * @author hongwei.quhw
  * @version $Id: FileWriter.java, v 0.1 2016-12-20 下午4:48:11 hongwei.quhw Exp $
  */
-public interface FileWriter {
+public interface FileWriter extends AutoCloseable{
 
     /**
      *  写入头部信息,  传入一个javabean对象
@@ -46,5 +46,6 @@ public interface FileWriter {
     /**
      * 关闭流
      */
+    @Override
     void close();
 }
